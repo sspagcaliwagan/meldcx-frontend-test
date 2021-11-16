@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(161deg, #263239 9%, #234 84%);
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+}
+
+.container .row {
+  color: black;
+}
+
+body #devices {
+  background-color: #f36e40 !important;
+}
+
+#canvas-container {
+  height: 90vh;
+  width: 100%;
+}
+
+.error-message {
+  padding: 8px;
+  width: fit-content;
+  color: #a63c06;
+  font-family: "Lato";
+  font-weight: bold;
+  display: flex;
+}
+
+.footer {
+  background-color: #d76845;
+}
+
+/* .footer .buttons {
+  font-family: "Monaco", sans-serif;
+} */
