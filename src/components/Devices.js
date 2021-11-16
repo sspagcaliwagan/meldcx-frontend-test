@@ -179,11 +179,13 @@ class Devices extends Component {
       message:
         "What function is always not ready? Asynchronous functions, because they always say 'Ah! Wait'",
     };
-    axios.post(`${Config.API_URL}/notify`, params, headers).catch((error) => {
-      if (error.response) {
-        console.log(error);
-      }
-    });
+    axios
+      .post(`${Config.API_URL}/notify`, params, { headers })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error);
+        }
+      });
   };
 
   logout = () => {
